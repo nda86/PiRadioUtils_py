@@ -1,8 +1,8 @@
 import paramiko
 import time
 
-user = "nda"
-secret = "171086"
+user = "pi"
+secret = "yf100zobq"
 port = 22
 
 
