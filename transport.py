@@ -50,7 +50,12 @@ def upload_script(client, scr, name):
 	sftp = client.open_sftp()
 	sftp.put(scr, '/home/pi/scripts/' + name)
 	time.sleep(5)
+	client.exec_command('sed -i "s/$\r//g" /home/pi/scripts/' + name)
 	client.exec_command('cd /home/pi/scripts && chmod +x ' + name)
+
+def download_script(client, path_from, path_to):
+	sftp = client.open_sftp()
+	sftp.get(path_from, path_to)
 
 def get_info_time(client):
 	stdin, stdout, stderr = client.exec_command('cd /home/pi/scripts && ./time_block.py')

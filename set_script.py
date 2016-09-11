@@ -9,10 +9,10 @@ ip_list = [
 # "172.16.40.94", # Gladkova 22
 
 
-# "172.16.40.42", # Aralskaya 16
-# "172.16.40.10", #Vavilova
-# "172.16.40.246", # Svetlogorskaya 5
-# "172.16.40.78", # Kalinina 43
+"172.16.40.42", # Aralskaya 16
+"172.16.40.10", #Vavilova
+"172.16.40.246", # Svetlogorskaya 5
+"172.16.40.78", # Kalinina 43
 
 
 # "172.16.40.54",  # Kalinina 169
@@ -38,7 +38,7 @@ ip_list = [
 
 def runCommand(host):
 	with t.ssh_client(host) as client:
-		t.upload_script(client, "./scr/time_block.py", "time_block.py")
+		t.upload_script(client, "./scr/get_time.sh", "get_time.sh")
 
 if __name__ == "__main__":
 	for ip in ip_list:

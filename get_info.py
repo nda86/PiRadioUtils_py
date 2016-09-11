@@ -1,6 +1,7 @@
 import transport as t
 import time
 import thread
+import pi_info as p
 
 ip_list = [
 
@@ -9,7 +10,7 @@ ip_list = [
 
 
 # "172.16.40.42", # Aralskaya 16
-# "172.16.40.10", #Vavilova
+"172.16.40.10", #Vavilova
 # "172.16.40.246", # Svetlogorskaya 5
 # "172.16.40.78", # Kalinina 43
 
@@ -37,7 +38,7 @@ ip_list = [
 
 def runCommand(host):
 	with t.ssh_client(host) as client:
-		return t.get_info_time(client)
+		return p.get_info2(client, host)
 
 if __name__ == "__main__":
 	for ip in ip_list:
@@ -50,6 +51,6 @@ if __name__ == "__main__":
 			# print('err' % e.value)
 			print(e)
 			continue
-		print("ip %s done for %i seconds" % (ip, (time.time() - start_time)))
-		print("****%s*****" % ip)
-		print(table_time)
+		# print("ip %s done for %i seconds" % (ip, (time.time() - start_time)))
+		print("***%s***\t---\t%s" % (ip, table_time))
+		
