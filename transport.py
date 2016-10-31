@@ -34,11 +34,14 @@ def add_mp3(client, list_mp3):
 
 def delete_mp3(client, list_mp3):
 	client.exec_command('cp /home/pi/scripts/kr_ritail_1.sh /home/pi/scripts/kr_ritail_1.sh.bak')
+	cmd = 'cat /home/pi/scripts/kr_ritail_1.sh | sed "/svet_all00.mp3/d; '
 	for mp3 in list_mp3:
-		client.exec_command('cat /home/pi/scripts/kr_ritail_1.sh | sed "/svet_all' + str(mp3) + '.mp3/d" > /home/pi/scripts/kr_ritail_1.tmp')
-		time.sleep(2)
-		client.exec_command('cat /home/pi/scripts/kr_ritail_1.tmp > /home/pi/scripts/kr_ritail_1.sh')
-		time.sleep(3)
+		cmd =  cmd + ' /svet_all' + str(mp3) + '.mp3/d; '
+	cmd = cmd + '" > /home/pi/scripts/kr_ritail_1.tmp'
+	client.exec_command(cmd)
+	time.sleep(8)
+	client.exec_command('cat /home/pi/scripts/kr_ritail_1.tmp > /home/pi/scripts/kr_ritail_1.sh')
+	time.sleep(3)
 
 def change_mp3(client, list_mp3):
 	for mp3 in list_mp3:

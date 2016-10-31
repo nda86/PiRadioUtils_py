@@ -6,56 +6,36 @@ mpg321 -g 43 /home/pi/pls1/svetofor_present1.mp3 >> /home/pi/logs/svetofor_prese
 ##############################
 mpg321 -g 43 /home/pi/pls2/svet_all10.mp3 >> /home/pi/logs/svet_all10.log
 #mpg321 -g 43 /home/pi/pls2/svet_all11.mp3 >> /home/pi/logs/svet_all11.log
-mpg321 -g 43 /home/pi/pls2/svet_all12.mp3 >> /home/pi/logs/svet_all12.log
 mpg321 -g 43 /home/pi/pls2/svet_all13.mp3 >> /home/pi/logs/svet_all13.log
-#mpg321 -g 43 /home/pi/pls2/svet_all14.mp3 >> /home/pi/logs/svet_all14.log
-mpg321 -g 43 /home/pi/pls2/svet_all15.mp3 >> /home/pi/logs/svet_all15.log
 ##############################
 #sleep 1
 mpg321 -g 43 /home/pi/pls1/svetofor_present2.mp3 >> /home/pi/logs/svetofor_present2.log
 ##############################
-mpg321 -g 43 /home/pi/pls2/svet_all16.mp3 >> /home/pi/logs/svet_all16.log
-mpg321 -g 43 /home/pi/pls2/svet_all17.mp3 >> /home/pi/logs/svet_all17.log
-#mpg321 -g 43 /home/pi/pls2/svet_all18.mp3 >> /home/pi/logs/svet_all18.log
+#mpg321 -g 43 /home/pi/pls2/svet_all16.mp3 >> /home/pi/logs/svet_all16.log
 #mpg321 -g 43 /home/pi/pls2/svet_all19.mp3 >> /home/pi/logs/svet_all19.log
 ##############################
 #sleep 1
 #mpg321 -g 43 /home/pi/pls1/svetofor_present3.mp3 >> /home/pi/logs/svetofor_present3.log
 ##############################
-#mpg321 -g 43 /home/pi/pls2/svet_all22.mp3 >> /home/pi/logs/svet_all22.log
 mpg321 -g 43 /home/pi/pls2/svet_all23.mp3 >> /home/pi/logs/svet_all23.log
-mpg321 -g 43 /home/pi/pls2/svet_all24.mp3 >> /home/pi/logs/svet_all24.log
-#mpg321 -g 43 /home/pi/pls2/svet_all25.mp3 >> /home/pi/logs/svet_all25.log
 mpg321 -g 43 /home/pi/pls2/svet_all26.mp3 >> /home/pi/logs/svet_all26.log
 #mpg321 -g 43 /home/pi/pls2/svet_all27.mp3 >> /home/pi/logs/svet_all27.log
 ##############################
 #sleep 1
 mpg321 -g 43 /home/pi/pls1/svetofor_present4.mp3 >> /home/pi/logs/svetofor_present4.log
 ##############################
-#mpg321 -g 43 /home/pi/pls2/svet_all28.mp3 >> /home/pi/logs/svet_all28.log
 #mpg321 -g 43 /home/pi/pls2/svet_all29.mp3 >> /home/pi/logs/svet_all29.log
-#mpg321 -g 43 /home/pi/pls2/svet_all30.mp3 >> /home/pi/logs/svet_all30.log
-#mpg321 -g 43 /home/pi/pls2/svet_all31.mp3 >> /home/pi/logs/svet_all31.log
-mpg321 -g 43 /home/pi/pls2/svet_all32.mp3 >> /home/pi/logs/svet_all32.log
 mpg321 -g 43 /home/pi/pls2/svet_all33.mp3 >> /home/pi/logs/svet_all33.log
 ##############################
 #sleep 1
 mpg321 -g 43 /home/pi/pls1/svetofor_present5.mp3 >> /home/pi/logs/svetofor_present5.log
 ##############################
-#mpg321 -g 43 /home/pi/pls2/svet_all34.mp3 >> /home/pi/logs/svet_all34.log
-#mpg321 -g 43 /home/pi/pls2/svet_all35.mp3 >> /home/pi/logs/svet_all35.log
-mpg321 -g 43 /home/pi/pls2/svet_all36.mp3 >> /home/pi/logs/svet_all36.log
-#mpg321 -g 43 /home/pi/pls2/svet_all37.mp3 >> /home/pi/logs/svet_all37.log
 #mpg321 -g 43 /home/pi/pls2/svet_all38.mp3 >> /home/pi/logs/svet_all38.log
-mpg321 -g 43 /home/pi/pls2/svet_all39.mp3 >> /home/pi/logs/svet_all39.log
 ##############################
 #sleep 1
 mpg321 -g 43 /home/pi/pls1/svet_new_1.mp3 >> /home/pi/logs/svet_new_1.log
 ##############################
-mpg321 -g 43 /home/pi/pls2/svet_all40.mp3 >> /home/pi/logs/svet_all40.log
 mpg321 -g 43 /home/pi/pls2/svet_all41.mp3 >> /home/pi/logs/svet_all41.log
-mpg321 -g 43 /home/pi/pls2/svet_all42.mp3 >> /home/pi/logs/svet_all42.log
-mpg321 -g 43 /home/pi/pls2/svet_all43.mp3 >> /home/pi/logs/svet_all43.log
 mpg321 -g 43 /home/pi/pls2/svet_all44.mp3 >> /home/pi/logs/svet_all44.log
 ##############################
 #sleep 1
@@ -63,32 +43,20 @@ mpg321 -g 43 /home/pi/pls1/svet_new_2.mp3 >> /home/pi/logs/svet_new_2.log
 ##############################
 #mpg321 -g 43 /home/pi/pls2/svet_all45.mp3 >> /home/pi/logs/svet_all45.log
 mpg321 -g 43 /home/pi/pls2/svet_all46.mp3 >> /home/pi/logs/svet_all46.log
-#mpg321 -g 43 /home/pi/pls2/svet_all47.mp3 >> /home/pi/logs/svet_all47.log
 mpg321 -g 43 /home/pi/pls2/svet_all48.mp3 >> /home/pi/logs/svet_all48.log
-mpg321 -g 43 /home/pi/pls2/svet_all49.mp3 >> /home/pi/logs/svet_all49.log
 #mpg321 -g 43 /home/pi/pls2/svet_all50.mp3 >> /home/pi/logs/svet_all50.log
 #mpg321 -g 43 /home/pi/pls2/svet_all51.mp3 >> /home/pi/logs/svet_all51.log
 #mpg321 -g 43 /home/pi/pls2/svet_all52.mp3 >> /home/pi/logs/svet_all52.log
-mpg321 -g 43 /home/pi/pls2/svet_all53.mp3 >> /home/pi/logs/svet_all53.log
 mpg321 -g 43 /home/pi/pls2/svet_all54.mp3 >> /home/pi/logs/svet_all54.log
 #mpg321 -g 43 /home/pi/pls2/svet_all55.mp3 >> /home/pi/logs/svet_all55.log
 #mpg321 -g 43 /home/pi/pls2/svet_all56.mp3 >> /home/pi/logs/svet_all56.log
 mpg321 -g 43 /home/pi/pls2/svet_all57.mp3 >> /home/pi/logs/svet_all57.log
 #mpg321 -g 43 /home/pi/pls2/svet_all58.mp3 >> /home/pi/logs/svet_all58.log
-mpg321 -g 43 /home/pi/pls2/svet_all59.mp3 >> /home/pi/logs/svet_all59.log
 mpg321 -g 43 /home/pi/pls2/svet_all60.mp3 >> /home/pi/logs/svet_all60.log
-mpg321 -g 43 /home/pi/pls2/svet_all61.mp3 >> /home/pi/logs/svet_all61.log
-mpg321 -g 43 /home/pi/pls2/svet_all62.mp3 >> /home/pi/logs/svet_all62.log
-mpg321 -g 43 /home/pi/pls2/svet_all63.mp3 >> /home/pi/logs/svet_all63.log
 
-mpg321 -g 43 /home/pi/pls2/svet_all73.mp3 >> /home/pi/logs/svet_all73.log
-mpg321 -g 43 /home/pi/pls2/svet_all74.mp3 >> /home/pi/logs/svet_all74.log
 
-mpg321 -g 43 /home/pi/pls2/svet_all71.mp3 >> /home/pi/logs/svet_all71.log
 
-mpg321 -g 43 /home/pi/pls2/svet_all66.mp3 >> /home/pi/logs/svet_all66.log
 
-mpg321 -g 43 /home/pi/pls2/svet_all75.mp3 >> /home/pi/logs/svet_all75.log
 
 mpg321 -g 43 /home/pi/pls2/svet_all76.mp3 >> /home/pi/logs/svet_all76.log
 
@@ -98,5 +66,32 @@ mpg321 -g 43 /home/pi/pls2/svet_all78.mp3 >> /home/pi/logs/svet_all78.log
 mpg321 -g 43 /home/pi/pls2/svet_all81.mp3 >> /home/pi/logs/svet_all81.log
 
 mpg321 -g 43 /home/pi/pls2/svet_all82.mp3 >> /home/pi/logs/svet_all82.log
+
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all85.mp3 >> /home/pi/logs/svet_all85.log
+mpg321 -g 43 /home/pi/pls2/svet_all85.mp3 >> /home/pi/logs/svet_all85.log
+mpg321 -g 43 /home/pi/pls2/svet_all86.mp3 >> /home/pi/logs/svet_all86.log
+#mpg321 -g 43 /home/pi/pls2/svet_all87.mp3 >> /home/pi/logs/svet_all87.log
+#mpg321 -g 43 /home/pi/pls2/svet_all88.mp3 >> /home/pi/logs/svet_all88.log
+
+mpg321 -g 43 /home/pi/pls2/svet_all90.mp3 >> /home/pi/logs/svet_all90.log
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all93.mp3 >> /home/pi/logs/svet_all93.log
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all94.mp3 >> /home/pi/logs/svet_all94.log
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all95.mp3 >> /home/pi/logs/svet_all95.log
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all98.mp3 >> /home/pi/logs/svet_all98.log
+
+
+mpg321 -g 43 /home/pi/pls2/svet_all99.mp3 >> /home/pi/logs/svet_all99.log
+
+mpg321 -g 43 /home/pi/pls2/svet_all100.mp3 >> /home/pi/logs/svet_all100.log
 
 mpc next

@@ -1,0 +1,16 @@
+
+
+mpg321 -g 38 /home/pi/pls2/svet_all76.mp3 >> /home/pi/logs/svet_all76.log
+
+
+mpg321 -g 38 /home/pi/pls2/svet_all85.mp3 >> /home/pi/logs/svet_all85.log
+
+mpg321 -g 38 /home/pi/pls2/svet_all85.mp3 >> /home/pi/logs/svet_all85.log
+
+
+mpg321 -g 38 /home/pi/pls2/svet_all86.mp3 >> /home/pi/logs/svet_all86.log
+
+
+mpg321 -g 38 /home/pi/pls2/svet_all91.mp3 >> /home/pi/logs/svet_all91.log
+
+mpc next
