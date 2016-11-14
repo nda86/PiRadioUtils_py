@@ -7,7 +7,6 @@ import pi_info as p
 ip_list = [
 
 
-"172.16.40.94", # Gladkova 22
 "172.16.40.98", #kutuzova 1
 
 
@@ -35,6 +34,7 @@ ip_list = [
 
 
 # "closed!!! 172.16.40.22", # 2 Bryanskaya
+# "closed!!! 172.16.40.94", # Gladkova 22
 ]
 
 
@@ -61,7 +61,7 @@ shop_list = [ \
 
 def runCommand(host):
 	with t.ssh_client(host) as client:
-		return p.get_info2(client, host)
+		return p.get_info3(client, host)
 
 if __name__ == "__main__":
 	for ip in ip_list:

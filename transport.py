@@ -1,5 +1,6 @@
 import paramiko
 import time
+import datetime as dt
 
 user = "pi"
 secret = "yf100zobq"
@@ -18,7 +19,7 @@ class ssh_client():
 	def __exit__(self, type, value, traceback):
 		self.client.close()
 
-def add_mp3(client, list_mp3):
+def add_mp3_tail(client, list_mp3):
 	client.exec_command('cd /home/pi/scripts && ./ftp_get_rekl_kras.sh')
 	time.sleep(2)
 	client.exec_command('cp /home/pi/scripts/kr_ritail_1.sh /home/pi/scripts/kr_ritail_1.sh.bak')
@@ -64,3 +65,27 @@ def get_info_time(client):
 	stdin, stdout, stderr = client.exec_command('cd /home/pi/scripts && ./time_block.py')
 	time.sleep(2)
 	return stdout.read()
+
+def backup_kr(client):
+	now = dt.datetime.now()
+	date = now.strftime("%d-%m-%y_%H-%M")
+	client.exec_command('cp /home/pi/scripts/kr_ritail_1.sh /home/pi/scripts/' + str(date) + '_kr_ritail_1.bak')
+
+def strip(client):
+	client.exec_command('sed -i.strip "/^$/d; /^#[^!]/d" /home/pi/scripts/kr_ritail_1.sh')
+
+def add_mp3_head(client, list_mp3):
+	client.exec_command('cd /home/pi/scripts && ./ftp_get_rekl_kras.sh')
+	time.sleep(2)
+	client.exec_command('cp /home/pi/scripts/kr_ritail_1.sh /home/pi/scripts/kr_ritail_1.sh.bak')
+	client.exec_command('sed -i.head "1,2d" /home/pi/scripts/kr_ritail_1.sh')
+	txt = '#!\/bin\/bash\\nmpc pause\\n'
+	for mp3 in list_mp3:
+		time.sleep(2)
+		txt = txt + 'mpg321 -g 38 \/home\/pi\/pls2\/svet_all' + str(mp3) +'\.mp3 >> \/home\/pi\/logs\/svet_all' + str(mp3) + '\.log\\n'
+	stdin, stdout, stderr = client.exec_command('sed -i "1s/^/' + str(txt) + '/" /home/pi/scripts/kr_ritail_1.sh')
+	# print stderr.readlines()
+	time.sleep(2)	
+	client.exec_command('cd /home/pi/scripts && ./volume_rekl.sh')
+
+	# sed -i "1s/^/#!\/bin\/bash\nmpc pause\nmpg321 -g 38 \/home\/pi\/pls2\/svet_all' + str(mp3) +'\.mp3 >> \/home\/pi\/logs\/svet_all124\.log\n/" /home/pi/scripts/kr_ritail_1.sh
