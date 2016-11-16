@@ -43,7 +43,7 @@ def runCommand(host):
 		# t.strip(client)
 		# t.add_mp3_head(client, [124])
 		# t.add_mp3_tail(client, [125])
-		# t.delete_mp3(client, [110])
+		# t.delete_mp3(client, [98])
 		# t.change_mp3(client, [85])
 
 
